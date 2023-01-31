@@ -5,6 +5,6 @@ variable "public-LB-info"{
 # variable "list-public-subnets"{
 #     type = list
 # }
-# variable "private-LB-info"{
-#     type = map
-# }
+variable "private-LB-info"{
+    type = map
+}

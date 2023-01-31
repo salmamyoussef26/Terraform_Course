@@ -10,8 +10,8 @@ output "public-ip-ec2"{
   })
 }
 
-# output "private-ec2-ids"{
-#     value = tomap({
-#     for k, inst in aws_instance.private_ec2s : k => inst.id
-#   })
-# }
+output "private-ec2-ids"{
+    value = tomap({
+    for k, inst in aws_instance.private_ec2s : k => inst.id
+  })
+}

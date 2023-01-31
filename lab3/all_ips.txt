@@ -1,0 +1,7 @@
+
+arn:aws:ec2:us-east-1:184746411800:instance/i-0c4c55bdc685e51fd :private IP is 10.0.0.38 & public IP is 54.210.136.241
+arn:aws:ec2:us-east-1:184746411800:instance/i-0b607d33483be0ef8 :private IP is 10.0.2.125 & public IP is 54.175.114.157
+arn:aws:ec2:us-east-1:184746411800:instance/i-0fde85a1d6c30f492 :private IP is 10.0.0.201 & public IP is 3.89.243.143
+arn:aws:ec2:us-east-1:184746411800:instance/i-0188949eb3b848982 :private IP is 10.0.2.144 & public IP is 54.82.247.200
+arn:aws:ec2:us-east-1:184746411800:instance/i-0f0c478ca180aafd7: private IP is 10.0.1.144
+arn:aws:ec2:us-east-1:184746411800:instance/i-0048cd28a0d5bda2b: private IP is 10.0.3.86

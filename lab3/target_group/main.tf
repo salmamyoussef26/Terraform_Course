@@ -26,3 +26,15 @@ resource "aws_lb_listener" "public-listener" {
   }
 }
 //private listener
+resource "aws_lb_listener" "private-listener" {
+  
+  for_each = var.private-listener-info
+  load_balancer_arn = each.value["LB_arn"]
+  port              = each.value["port"]
+  protocol          = each.value["protocol"]
+
+  default_action {
+    type             = each.value["type"]
+    target_group_arn = each.value["tg-arn"]
+  }
+}

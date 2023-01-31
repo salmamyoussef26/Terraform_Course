@@ -35,7 +35,7 @@ resource "aws_instance" "public_ec2s" {
   }
 
   provisioner "local-exec" {
-    command= "echo 'private IP is ${self.private_ip} & public IP is ${self.public_ip}' >> ./all-IPs.txt"
+    command= "echo '${self.arn} :private IP is ${self.private_ip} & public IP is ${self.public_ip}' >> ./all_ips.txt"
   }
   
   provisioner "remote-exec" {
@@ -64,14 +64,14 @@ resource "aws_instance" "private_ec2s" {
   key_name = each.value["ec2_key_pair"]
 
   subnet_id = each.value["ec2_subnet_id"]
-  vpc_security_group_ids = each.value["ec2_sg"]
+  vpc_security_group_ids = [each.value["ec2_sg"]]
   
   tags = {
     Name = each.value["ec2_name"]
   }
 
   provisioner "local-exec" {
-  command= "echo 'private IP is ${self.private_ip}' >> ./all-IPs.txt"
+  command= "echo '${self.arn}: private IP is ${self.private_ip}' >> ./all_ips.txt"
   }
 
 

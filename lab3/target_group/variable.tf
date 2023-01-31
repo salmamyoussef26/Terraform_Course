@@ -9,3 +9,7 @@ variable "tg-attachment"{
 variable "public-listener-info"{
     type = map
 }
+
+variable "private-listener-info"{
+    type = map
+}

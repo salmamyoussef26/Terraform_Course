@@ -1,8 +1,0 @@
-private IP is 10.0.2.142 & public IP is 3.84.80.188
-private IP is 10.0.0.130 & public IP is 3.88.58.148
-private IP is 10.0.2.248 & public IP is 54.166.128.69
-private IP is 10.0.0.226 & public IP is 54.242.20.132
-private IP is 10.0.2.91 & public IP is 54.237.244.254
-private IP is 10.0.0.187 & public IP is 34.224.223.138
-private IP is 10.0.2.226 & public IP is 54.198.218.161
-private IP is 10.0.0.227 & public IP is 54.152.23.129
